@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<title>Practice Electronics</title>
+<h1 style="color:white">Digital Electronics</h1>
+<hr>
+<script>
+function calc()
+{
+var reply=window.confirm("Are you sure you want to submit?");
+if(reply){
+var s=0;
+var p;
+var c;
+if(document.getElementById("a1").checked) 
+{s=s+1;}
+if(document.getElementById("b2").checked) 
+{s=s+1;}
+if(document.getElementById("c3").checked) 
+{s=s+1;}
+if(document.getElementById("d4").checked) 
+{s=s+1;}
+if(document.getElementById("c5").checked) 
+{s=s+1;}
+if(document.getElementById("b6").checked) 
+{s=s+1;}
+if(document.getElementById("a7").checked) 
+{s=s+1;}
+if(document.getElementById("b8").checked) 
+{s=s+1;}
+if(document.getElementById("c9").checked) 
+{s=s+1;}
+if(document.getElementById("d0").checked) 
+{s=s+1;}
+ 
+p=s*10;
+
+if(s==10)
+{
+c="Excellent!!";
+}
+else if(s<10 && s>=9)
+{
+c="Very Good!!";
+}
+else if(s<9 && s>=8)
+{
+c="Good!!";
+}
+else if(s<8 && s>=7)
+{
+c="Average!!";
+}
+else
+{
+c="Poor!! Work hard!!";
+}
+
+window.alert(c+" Your score is "+p+"%");
+window.open("../Home.html","_self");
+}
+}
+
+</script>
+<style>input[type=button] {    width: 12em;  height: 2em;}input[type=reset] {    width: 12em;  height: 2em;}</style>
+
+<body style="background-color:#25383C">
+<form style="color:white">
+<br><b>1. The schimmit trigger may be used to?</b><br>
+<input type="radio" name="q1" id="a1">Square slowly varying input<br>
+<input type="radio" name="q1" id="b1">Change voltage to corresponding frequency<br>
+<input type="radio" name="q1" id="c1">Change frequency to voltage<br>
+<input type="radio" name="q1" id="d1">None of the above<br>
+<br><b>2. Which of the following is the minimum error code?</b><br>
+<input type="radio" name="q2" id="a2">Octal code<br>
+<input type="radio" name="q2" id="b2">Grey code<br>
+<input type="radio" name="q2" id="c2">Binary code<br>
+<input type="radio" name="q2" id="d2">Excess-3 code<br>
+<br><b>3. SR flip flop can be converted to T-type flip-flop if?</b><br>
+<input type="radio" name="q3" id="a3">S is connected to Q<br>
+<input type="radio" name="q3" id="b3">R is connected to Q<br>
+<input type="radio" name="q3" id="c3">S and R are connected to Q and Q' respectively<br>
+<input type="radio" name="q3" id="d3">Both S and R are shortened<br>
+<br><b>4. Popular applications of flip-flop are?</b><br>
+<input type="radio" name="q4" id="a4">Counter <br>
+<input type="radio" name="q4" id="b4">Shift Registers<br>
+<input type="radio" name="q4" id="c4">Transfer Registers<br>
+<input type="radio" name="q4" id="d4">All of the above<br>
+<br><b>5. Register is a</b><br>
+<input type="radio" name="q5" id="a5">Set of capacitor to register input instructions<br>
+<input type="radio" name="q5" id="b5">Set of paper tapes and cards put in a file<br>
+<input type="radio" name="q5" id="c5">Temporary storage unit within the CPU<br>
+<input type="radio" name="q5" id="d5">Part of auxiliary machine<br>
+<br><b>6. For which of the following flip-flop, the output clearly defines for all combination of two inputs?</b><br>
+<input type="radio" name="q6" id="a6">Q type flip-flop<br>
+<input type="radio" name="q6" id="b6">J-K flip-flop<br>
+<input type="radio" name="q6" id="c6">R-S type flip-flop<br>
+<input type="radio" name="q6" id="d6">T flip-flop<br>
+<br><b>7. A simple flip-flop</b><br>
+<input type="radio" name="q7" id="a7">is 1 bit memory<br>
+<input type="radio" name="q7" id="b7">is 2 bit memory<br>
+<input type="radio" name="q7" id="c7">is a four state device<br>
+<input type="radio" name="q7" id="d7">has nothing to do with memory<br>
+<br><b>8. The main difference between JK and RS flipflop is that:</b><br>
+<input type="radio" name="q8" id="a8">JK flip-flop doesn't need a clock pulse<br>
+<input type="radio" name="q8" id="b8">JK flip-flop accepts both input as 1<br>
+<input type="radio" name="q8" id="c8">There is feedback in JK flipflop<br>
+<input type="radio" name="q8" id="d8">JK flip-flop is acronym of junction cathode multivibrator<br>
+<br><b>9. Radix of binary number system is ____?</b><br>
+<input type="radio" name="q9" id="a9">0<br>
+<input type="radio" name="q9" id="b9">1<br>
+<input type="radio" name="q9" id="c9">2<br>
+<input type="radio" name="q9" id="d9">Both A and B<br>
+<br><b>10. An SR  flip-flop cannot accept the following input entry</b><br>
+<input type="radio" name="q0" id="a0">Both input zero<br>
+<input type="radio" name="q0" id="b0">Zero at R and one at S<br>
+<input type="radio" name="q0" id="c0">Zero at S and one at R<br>
+<input type="radio" name="q0" id="d0">Both inputs one<br>
+
+<br>
+<hr>
+<input type="button" onclick="calc()" value="SUBMIT" style="background-color:#212F3C;cursor:pointer;color:white">
+<input type="reset" value="RESET" style="background-color:#212F3C;cursor:pointer;color:white">
+<a href="../Home.html">
+<input type="button" value="Back" style="background-color:#212F3C;cursor:pointer;color:white">
+</a>
+</form>
+
+</body>
+</html>

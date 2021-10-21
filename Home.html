@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<title>Welcome</title>
+<h1 style="text-align:center;font-family:Verdana;color:white">Learning Management System</h1>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #625D5D;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#FEFCFF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color:#625D5D;color:white}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+<script>
+function logout()
+{
+	var c=confirm("Are you sure you want to log out?");
+	if(c==true)
+	window.open("LMS.html","_self");
+}
+</script>
+
+<body background="./images/home.jpg" style="background-size:100%">
+
+<ul>
+<li class="dropdown">
+   <a href="#" class="dropbtn">Hello User!!</a>
+   <div class="dropdown-content">
+      <a href="#lms" onclick="logout()">Log Out</a>
+       <li class="dropdown">
+   <a href="#" class="dropbtn">Courses</a>
+   <div class="dropdown-content">
+      <a href="./Subjects/ECE.html">Digital Electronics</a>
+      <a href="./Subjects/DBMS.html">Database Management</a>
+      <a href="./Subjects/COD.html">Computer Architecture</a>	
+  <li class="dropdown">
+   <a href="#" class="dropbtn">Practice and Progress</a>
+   <div class="dropdown-content">
+      <a href="./Pract_paper/ECE.html">Digital Electronics</a>
+      <a href="./Pract_paper/DBMS.html">Database Management</a>
+      <a href="./Pract_paper/COD.html">Computer Architecture</a>
+ 
+  <li><a href="About.htm">About</a></li>
+ 
+    </div>
+  </li>
+</ul>
+
+</body>
+</html>
+

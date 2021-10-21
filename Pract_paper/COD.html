@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+<title>Practice COD</title>
+<h1 style="color:white">Computer Architecture and Design</h1>
+<hr>
+<script>
+function calc()
+{
+var reply=window.confirm("Are you sure you want to submit?");
+if(reply){
+var s=0;var p;var c;
+if(document.getElementById("a1").checked) 
+{s=s+1;}
+if(document.getElementById("b2").checked) 
+{s=s+1;}
+if(document.getElementById("c3").checked) 
+{s=s+1;}
+if(document.getElementById("d4").checked) 
+{s=s+1;}
+if(document.getElementById("c5").checked)
+ {s=s+1;}
+if(document.getElementById("b6").checked)
+ {s=s+1;}
+if(document.getElementById("a7").checked)
+ {s=s+1;}
+if(document.getElementById("b8").checked) 
+{s=s+1;}
+if(document.getElementById("c9").checked)
+ {s=s+1;}
+if(document.getElementById("d0").checked)
+ {s=s+1;}
+ p=s*10;
+if(s==10)
+{c="Excellent!!";}
+else if(s<10 && s>=9)
+{c="Very Good!!";}
+else if(s<9 && s>=8)
+{c="Good!!";}
+else if(s<8 && s>=7)
+{c="Average!!";}
+else{c="Poor!! Work hard!!";}
+window.alert(c+" Your score is "+p+"%");
+window.open("../Home.html","_self");
+}
+}
+</script>
+<style>
+input[type=button] 
+{    width: 12em;  height: 2em;}
+input[type=reset]
+ {    width: 12em;  height: 2em;}
+</style>
+<body style="background-color:#25383C">
+<form style="color:white">
+<br><b>1. A collection of line that connects several devices is called_____</b><br>
+<input type="radio" name="q1" id="a1">Bus<br>
+<input type="radio" name="q1" id="b1">Peripheral connection wires<br>
+<input type="radio" name="q1" id="c1">Both A and B<br>
+<input type="radio" name="q1" id="d1">Internal Wires<br>
+<br><b>2. In a single byte how many bits will be there?</b><br>
+<input type="radio" name="q2" id="a2">16<br>
+<input type="radio" name="q2" id="b2">8<br>
+<input type="radio" name="q2" id="c2">4<br>
+<input type="radio" name="q2" id="d2">32<br>
+<br><b>3. PC Program Counter is also called</b><br>
+<input type="radio" name="q3" id="a3">Memory Pointer<br>
+<input type="radio" name="q3" id="b3">Data counter<br>
+<input type="radio" name="q3" id="c3">Instruction Pointer<br>
+<input type="radio" name="q3" id="d3">File pointer<br>
+<br><b>4. A complete microcomputer system consist of _____</b><br>
+<input type="radio" name="q4" id="a4">Microprocessor<br>
+<input type="radio" name="q4" id="b4">Memory<br>
+<input type="radio" name="q4" id="c4">Peripheral Equipment<br>
+<input type="radio" name="q4" id="d4">All of the above<br>
+<br><b>5. CPU doesn't perform which of the following operation?</b><br>
+<input type="radio" name="q5" id="a5">Logic operation<br>
+<input type="radio" name="q5" id="b5">Airthematic operation<br>
+<input type="radio" name="q5" id="c5">Data tranfer<br>
+<input type="radio" name="q5" id="d5">None of the above<br>
+<br><b>6. The access time of memory is ______ the time required for performing any single CPU operation</b><br>
+<input type="radio" name="q6" id="a6">Shorter than<br>
+<input type="radio" name="q6" id="b6">Longer than<br>
+<input type="radio" name="q6" id="c6">Negligible than<br>
+<input type="radio" name="q6" id="d6">Same as<br>
+<br><b>7. Memory adderess refers to the successive memory words and the machine is called as</b><br>
+<input type="radio" name="q7" id="a7">Word addressable<br>
+<input type="radio" name="q7" id="b7">Byte addressable<br>
+<input type="radio" name="q7" id="c7">Bit addressable<br>
+<input type="radio" name="q7" id="d7">Terra byte addressable<br>
+<br><b>8. A microprogram written as string of 0's and 1's is a</b><br>
+<input type="radio" name="q8" id="a8">Symbolic micro-instruction<br>
+<input type="radio" name="q8" id="b8">Binary microprogram<br>
+<input type="radio" name="q8" id="c8">Symbolic micro-program<br>
+<input type="radio" name="q8" id="d8">Binary micro-instruction<br>
+<br><b>9. The pipeline is like ______</b><br>
+<input type="radio" name="q9" id="a9">House pipeline<br>
+<input type="radio" name="q9" id="b9">A gas line<br>
+<input type="radio" name="q9" id="c9">An automobile assembly line<br>
+<input type="radio" name="q9" id="d9">Both A and B<br>
+<br><b>10. Data hazards occur when</b><br>
+<input type="radio" name="q0" id="a0">Greater performance loss<br>
+<input type="radio" name="q0" id="b0">Some functional unit is not fully pipelined<br>
+<input type="radio" name="q0" id="c0">Machine size is limited<br>
+<input type="radio" name="q0" id="d0">Pipeline changes the order of R/W access<br><br>
+<hr>
+<input type="button" onclick="calc()" value="SUBMIT"style="background-color:#212F3C;cursor:pointer;color:white">
+<input type="reset" value="RESET" style="background-color:#212F3C;cursor:pointer;color:white">
+<a href="../Home.html">
+<input type="button" value="Back" style="background-color:#212F3C;cursor:pointer;color:white">
+</a>
+</form>
+</body>
+</html>

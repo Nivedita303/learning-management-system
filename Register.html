@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<title>Register</title>
+<h1 style="text-align:center;color:white;font-family:verdana;font-size:250%">Learning Management System</h1>
+<script>
+function reg()
+{
+ if(document.myform.firstname.value=="")
+{
+alert("Please enter your first name");
+document.myform.firstname.focus();
+}
+else if(document.myform.lastname.value=="")
+{
+window.alert("Please enter your last name");
+document.myform.lastname.focus();
+}
+else if(document.myform.numb.value.length!=10)
+{
+alert("Provide correct Mobile Number");
+document.myform.numb.focus();
+}
+else if(document.myform.email.value.indexOf("@") <0 || document.myform.email.value.indexOf(".com") <0||document.myform.email.value=="")
+{
+alert("Enter a valid email address");
+document.myform.email.focus();
+}
+else if(document.myform.pass.value.length<8)
+{
+alert("Please enter a strong password");
+document.myform.pass.focus();
+}
+else if(document.myform.dob.value=="")
+{
+alert("Please enter your birthdate");
+document.myform.dob.focus();
+}
+else
+{
+alert("Successfully Registered!!");
+window.open("LMS.html","_self");
+}
+}
+</script>
+<style>
+input[type=button] {
+    width: 12em;  height: 2em;
+}
+input[type=reset] {
+    width: 12em;  height: 2em;
+}
+select{
+	width: 8em; height: 2em;
+}
+input[type=date]{
+	width: 10em; height: 2em;
+}
+input[type=text]{
+	height: 1.5em;
+}
+input[type=password]{
+	height: 1.5em;
+}
+</style>
+<br><br>
+<form method="post" name="myform" style="font-size:120%;text-align:"center">
+<table style="font-size:105%"align="center">
+   
+ 	<tr> <th style="font-size:140%" colspan="2">Registration<br><hr><th></tr>
+	<tr><td><input type="text" name="firstname" placeholder="First Name" ></td> 
+                         <td><input type="text" name="lastname" placeholder="Last Name"></td>
+	</tr>
+	<tr><td colspan="2"><input type="text" name="numb" placeholder="Mobile Number" size="47"></td></tr> 
+	<tr><td colspan="2"><input type="text" name="email" size="47" placeholder="Email"></td> </tr>
+	<tr><td colspan="2"><input type="password" name="pass" size="47" placeholder="Password"></td> </tr>
+	<tr><td>Date of Birth  </td><td><input type="date" name="dob" placeholder="Birthday"></td></tr>
+	<tr><td>Gender:</td><td><select name="example">
+    <option value="M">Male</option>
+    <option value="B">Female</option>
+	</select></td></tr>
+	<tr><td>  <input type="Button" value="Register" name="Register" onclick="reg()" style="background-color:#212F3C;cursor:pointer;color:white"></td>
+                         <td> <input type="Reset" name="Reset" style="background-color:#212F3C;cursor:pointer;color:white"></td>
+	</tr>
+</table>        
+  </form>
+<body background="./images/Body.jpg"></body>
+
+
+</html>

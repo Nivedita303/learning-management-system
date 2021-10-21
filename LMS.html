@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<title>Learning Management System</title>
+<h1 style="text-align:center;color:white;font-family:verdana;font-size:250%">Learning Management System</h1>
+<script>
+function login()
+{
+var i=document.getElementById("g").value;
+var p=document.getElementById("h").value;
+if(i=="user" && p=="user123")
+	window.open("Home.html","_self");
+else
+{
+window.alert("Invalid Username or Password!");
+}
+}
+function openreg()
+{
+window.open("Register.html","_self");
+}
+
+</script>
+<style>
+input[type=button] {
+    width: 9em;  height: 2em;
+}
+input[type=reset] {
+    width: 9em;  height: 2em;
+}
+input[type=text]{
+	width: 18em; height: 1.5em;
+}
+input[type=password]{
+	width: 18em; height: 1.5em;
+}
+
+</style>
+<h3 style="font-size:190%"><br>Log In</h3>
+<form style="font-size:120%;text-align:center">
+ <input type="text" name="id" id="g" placeholder="Login ID"size="34"><br><br>
+<input type="password"  name="password"id="h" placeholder="Password"size="34"><br><br>
+<input type="Button" value="Login" onclick="login()" style="background-color:#212F3C;cursor:pointer;color:white">
+<input type="Reset" name="Reset"style="background-color:#212F3C;cursor:pointer;color:white">
+</form>
+<body style="text-align:center" background="./images/Body.jpg">
+<br><br>
+<h3 style="color:beige;cursor:pointer" onmouseover="style.color='orange'" onmouseout="style.color='beige'" onclick="openreg()"><u>Don't have an account?<br>Sign Up</u></h3>
+</body>
+</html>
